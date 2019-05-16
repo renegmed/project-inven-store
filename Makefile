@@ -8,7 +8,7 @@ docker:
 
 .PHONY: run 
 run:
-	docker run --name inven-store -d -p 8080:8080 inven-store 
+	docker run --name inven-store --net host -d -p 8080:8080 inven-store 
 
 .PHONY: tag
 tag:
